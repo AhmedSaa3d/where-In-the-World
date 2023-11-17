@@ -1,0 +1,305 @@
+/*Start Common Variables*/
+:root {
+    --white-color: #EEEEEE;
+    --blue-color: #00AdB5;
+    --grey-color: #393e46;
+    --dark-color: #222831;
+    --main-trans-time: 0.5s;
+}
+
+/*End Common Variables*/
+/*Start Common Rules*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    background-color: var(--grey-color);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Media quiers*/
+/*small screens*/
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*medium screens*/
+@media (min-width : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large screens*/
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+input:focus{
+    outline: none;
+}
+ul{
+    list-style:none;
+}
+.d-none{
+    display: none;
+}
+/* End Common Rules */
+
+/*Start World App*/
+.world-app .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.world-app .head h2{
+    margin: 0;
+    letter-spacing: 4px;
+}
+.world-app .head i{
+    color: var(--blue-color);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.world-app .main-page{
+    padding: 10px;
+    background-color: var(--grey-color);
+}
+.world-app .main-page .filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+.world-app .filters .filterInput{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--blue-color) ;
+    background-color: var(--dark-color);
+    border: 1px solid var(--blue-color) ;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.world-app .filters .filterInput i{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: var(--blue-color);
+    width: 50px;
+    height: 100%;
+}
+.world-app .filters .filterInput input{
+    padding: 5px 54px 5px 5px;
+    width: 250px;    
+    border: none;
+    caret-color: var(--white-color);
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    font-size: 20px;
+    position: relative;
+}
+.world-app .filters .filter{
+    position: relative;
+}
+
+.world-app .filters .filter .btn{
+    padding: 5px;
+    font-size: 20px;
+    color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    border: 1px solid var(--blue-color) ;
+    background-color: var(--dark-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.world-app .filters .filter ul {
+    opacity: 0;
+    position: absolute;
+    top:22px;
+    z-index: 10;
+    padding: 5px;
+    width: 100%;
+    overflow: auto;
+    background-color: var(--dark-color);
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+}
+.world-app .filters .filter:hover ul {
+    opacity: 1;
+  }
+  .world-app .filters .filter ul li{
+    padding: 5px;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+  .world-app .filters .filter ul li:hover{
+    background-color: var(--blue-color);
+  }
+
+.world-app .main-page .allFlags{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding-top: 20px;    
+}
+.world-app .allFlags .flag{
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.world-app .allFlags .flag img{
+    width: 100%;
+    height: 180px;
+}
+
+.world-app .allFlags .flag .info{
+    padding: 5px 20px;
+    color: var(--white-color);
+}
+.world-app .allFlags .flag h3{
+    color: var(--blue-color);
+}
+
+
+/*Start Single Flag Page*/
+.world-app .backBtn{
+    margin-top: 1px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: var(--main-trans-time);
+    -webkit-transition: var(--main-trans-time);
+    -moz-transition: var(--main-trans-time);
+    -ms-transition: var(--main-trans-time);
+    -o-transition: var(--main-trans-time);
+}
+.world-app .backBtn:hover{
+    background-color: var(--blue-color);
+}
+
+.world-app .flag-page{
+    padding: 30px 0;
+    color: rgb(238 238 238 / 83%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+}
+
+.world-app .flag-page img{
+    width: 100%;
+    height: 100%;
+}
+
+.world-app .flag-page .flagInfo{
+    padding: 10px 0px;
+}
+.world-app .flag-page .flagInfo h3{
+    margin: 0;
+    color: var(--blue-color);
+    font-size: 30px;
+}
+
+.world-app .flag-page .flagInfo ul{
+    letter-spacing: 2px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.world-app .flag-page .flagInfo ul li {
+    display: flex;
+    align-items: center;
+}
+
+.world-app .flag-page .flagInfo ul li div{
+    display: inline-block;
+}
+.world-app .flag-page .flagInfo ul li span{
+    background-color: var(--dark-color);
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: var(--white-color);
+    display: inline-block;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    -webkit-border-radius:6px;
+}
+
+.world-app .flag-page .flagInfo ul li .borders span{
+    cursor: pointer;
+}
+
+.world-app .flag-page .flagInfo ul li .borders span:hover{
+    color: var(--blue-color);
+}
+/*End Single Flag Page*/

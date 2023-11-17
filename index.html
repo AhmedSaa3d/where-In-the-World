@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where In The World App</title>
+    <meta name="Author" content="Ahmed Saad">
+    <meta name="description" content="This is an app for Rest API Countries.">
+    <link rel="icon" href="Images/site_icon.jpg">
+    <!--Font Awesome V6.4.0-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Main tempalte css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Render all elements normally normalize.css v8.0.1-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Work sans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!-- Start Where In the world App -->
+<div class="world-app">
+    <div class="head">
+        <i class="fa-solid fa-earth-africa"></i>
+        <h2>Where In The World!</h2>
+        <i class="fa-solid fa-earth-africa"></i>
+    </div>
+    <div class="main-page">
+        <div class="filters">
+            <div class="filterInput">
+                <input type="text" id="search" placeholder="Search For Country">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="filter filterSort">
+                <div class="btn">&nbsp;Sort ALL By&nbsp;</div>
+                <ul>
+                <li data-sortby="name">Name A->Z</li>
+                <li data-sortby="nameRev">Name Z->A</li>
+                <li data-sortby="population">Population</li>
+                <li data-sortby="currencies">Currencies</li>
+                <li data-sortby="languages">Languages</li>
+                <li data-sortby="borders">Borders</li>                
+                </ul>
+            </div>
+            <div class="filter filterRegion">
+                <div class="btn">Filter By Rigon</div>
+                <ul>
+                <li>Africa</li>
+                <li>Americas</li>
+                <li>Asia</li>
+                <li>Europe</li>    
+                <li>All</li>
+                </ul>
+            </div>
+        </div>   
+        <div class="allFlags">
+        </div>       
+    </div>
+    <div class="container d-none">
+        <div class="backBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+        </div>
+        <div class="flag-page">
+             <div class="imgDiv">
+                <img src="https://flagcdn.com/w320/ng.png" alt="">
+            </div>
+            <div class="flagInfo">
+                <h3>Mexico</h3>
+                <ul>
+                    <li>Official Name:&nbsp;<span>México</span></li>
+                    <li>Capital:&nbsp;<span>Mexico City</span></li>
+                    <li>Region:&nbsp;<span>Americas</span></li>
+                    <li>Sub Region:&nbsp;<span>North North North America</span></li>
+                    <li>Population:&nbsp;<span>128932753</span></li>
+                    <li>Top Level Domain:&nbsp;<span>.mx</span></li>
+                    <li>Currencies:&nbsp;
+                        <div class="currency">
+                            <!-- <span>Mexican peso</span> -->
+                        </div>
+                    </li>
+                    <li>Languages:&nbsp;
+                        <div class="languages">
+                            <!-- <span>Spanish</span>     -->
+                        </div>
+                    </li>
+                    <li>Border Countries:&nbsp;
+                        <div class="borders">
+                            <!-- <span>Egypt</span> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div> 
+ 
+ <!-- End Where In the world App -->
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
+
