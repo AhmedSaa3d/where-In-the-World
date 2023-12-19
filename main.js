@@ -65,7 +65,7 @@ function createMainPageAllFlags() {
       createFlagPage(flagDiv.dataset.id);
     };
     //append in main div
-    allFlagsPage.appendChild(flagDiv);
+    if (nameFlage.textContent != "Israel") allFlagsPage.appendChild(flagDiv);
   }
 }
 
@@ -201,7 +201,7 @@ function createFlagPage(flagId) {
     })();
     spn.textContent = FlagsDataToSaveIn[flgId].name.common;
     spn.dataset.id = flgId;
-    bordersDiv.appendChild(spn);
+    if (spn.textContent != "Israel") bordersDiv.appendChild(spn);
     spn.onclick = function () {
       createFlagPage(flgId);
     };
