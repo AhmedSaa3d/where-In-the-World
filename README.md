@@ -1,5 +1,5 @@
 # where In The World
-    - Do ypu need knowledge about countries worldwide here is our project.
+    - Do you need knowledge about countries worldwide here is our project.
     - "Where in the World" is a dynamic web application designed to provide comprehensive information about countries across the globe.
     - Leveraging the REST Countries API, this project seamlessly integrates real-time data to empower users with an immersive exploration experience.
 
