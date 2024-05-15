@@ -15,12 +15,12 @@
     🌟 Enhanced User Experience: Enjoy hover and focus states for interactive elements on the page, providing a delightful browsing experience.
 
 # Covered Topics :-
-    - html5
-    - css3
-    - javaScript
-    - Es6
-    - Dom - Bom - Json
-    - REST Countries API
+    🌐 HTML5
+    🎨 CSS3
+    💻 JavaScript
+    🚀 ES6
+    🔍 DOM - BOM - JSON
+    🌍 REST Countries API
 
 ## It's an advanced Challenge from [frontendmentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
 
@@ -28,7 +28,7 @@
 
 ## GitHub Repository: [Where in the World GitHub Repository](https://github.com/AhmedSaa3d/where-In-the-World)
 
-# Site ScreenShot :
+## Site ScreenShot :
 ![](Where-In-The-World-App-Design-1.png)
 ![](Where-In-The-World-App-Design-2.png)
 ![](Where-In-The-World-App-Design-3.png)
